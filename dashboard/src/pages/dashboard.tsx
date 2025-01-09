@@ -8,11 +8,13 @@ import ExpenseCard from "../components/cards/expense-card";
 export default function Dashboard() {
   return (
     <Box
-      display={"flex"}
-      flexDirection={"column"}
-      width={"1300px"}
-      margin={"0 auto"}
-      padding={"15px 0"}
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        width: "1300px",
+        margin: "0 auto",
+        padding: "15px 0",
+      }}
     >
       <WelcomeCard />
       <Box sx={{ flexGrow: 1, paddingTop: "15px" }}>

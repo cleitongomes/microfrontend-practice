@@ -1,6 +1,14 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
-import { AppBar, Box, Button, IconButton, Toolbar, Typography } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Button,
+  IconButton,
+  Toolbar,
+  Typography,
+} from "@mui/material";
+import LogoutIcon from "@mui/icons-material/Logout";
 
 export default function Navbar() {
   return (
@@ -32,7 +40,10 @@ export default function Navbar() {
             </Typography>
           </Typography>
           <Button color="inherit" onClick={() => (location.href = "/")}>
-            Logout
+            <LogoutIcon
+              titleAccess="Logout"
+              sx={{ fontSize: "30px", color: "#fff" }}
+            />
           </Button>
         </Toolbar>
       </AppBar>
